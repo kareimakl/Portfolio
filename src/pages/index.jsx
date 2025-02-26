@@ -247,7 +247,7 @@ function Photos() {
 
       {/* pasting customised html here*/}
 
-      <div class="bg-white">
+      {/* <div class="bg-white">
   <div class="mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:px-8">
     <div class="sm:align-center sm:flex sm:flex-col">
       <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-center">Pricing Plans</h1>
@@ -451,7 +451,7 @@ function Photos() {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
     
