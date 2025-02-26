@@ -8,17 +8,17 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xgvwegrp");
   return (
     <section className="contact-us">
-      <h1 className="title">
+      <h1 className="title text-center ">
         <span className="icon-envelope"> </span>
-        Contact us
+        Commen Sunn
       </h1>
-      <p className="sub-title">
+      {/* <p className="sub-title">
         Contact us for more information and Get notified when I publish
         something new.
-      </p>
+      </p> */}
 
       <div style={{ justifyContent: "space-between" }} className="flex">
-        <form onSubmit={handleSubmit} className="">
+        {/* <form onSubmit={handleSubmit} className="">
           <div className="flex">
             <label htmlFor="email">Email Address:</label>
             <input
@@ -73,7 +73,7 @@ const Contact = () => {
             style={{ height: 340, marginTop: "-90px" }}
             animationData={contactAnimation}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
