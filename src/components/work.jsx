@@ -45,10 +45,12 @@ function work() {
   return (
     <div>
       <Head>
-        <title>Projects - KARIM AKL</title>
+        <title>
+          KARIM AKL - Software Engineer, Full Stack Developer
+        </title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="I’m Karim, a software engineer based in Egypt. I specialize in building modern web applications using React, Next.js, and Node.js, delivering high-performance solutions for various industries."
         />
       </Head>
       <ul
