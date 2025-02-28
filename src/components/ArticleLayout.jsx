@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
-
+import { useEffect, useState } from 'react'
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
@@ -18,16 +17,17 @@ function ArrowLeftIcon(props) {
   )
 }
 
-export function ArticleLayout({
-  children,
-  meta,
-  isRssFeed = false,
-  previousPathname,
-}) {
-  let router = useRouter()
+export function ArticleLayout({ children, meta, isRssFeed = false, previousPathname }) {
+  const [mounted, setMounted] = useState(false);
+  const [router, setRouter] = useState(null);
+
+  useEffect(() => {
+    setMounted(true);
+    setRouter(require('next/router').useRouter()); 
+  }, []);
 
   if (isRssFeed) {
-    return children
+    return children;
   }
 
   return (
@@ -39,7 +39,7 @@ export function ArticleLayout({
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
           <div className="mx-auto max-w-2xl">
-            {previousPathname && (
+            {mounted && previousPathname && router && (
               <button
                 type="button"
                 onClick={() => router.back()}

@@ -1,5 +1,7 @@
 
 "use client"
+import dynamic from 'next/dynamic';
+
 import Head from 'next/head'
 import { Button } from '@/components/Button'
 import { Container } from "@/components/Container";
