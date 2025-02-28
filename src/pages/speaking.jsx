@@ -40,45 +40,39 @@ export default function Speaking() {
         intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
       >
         <div className="space-y-20">
-          <SpeakingSection title="Conferences">
+          <SpeakingSection title="Television Appearance">
             <Appearance
               href="#"
-              title="In space, no one can watch you stream — until now"
-              description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-              event="SysConf 2021"
-              cta="Watch video"
-            />
-            <Appearance
-              href="#"
-              title="Lessons learned from our first product recall"
-              description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-              event="Business of Startups 2020"
-              cta="Watch video"
+              title="Television Interview on MehwartvChannel"
+              description="I participated in an inspiring live TV interview on the 'Yom Saeed' program, where I discussed my journey and experience as one of the distinguished 2024 graduates of the Digital Egypt Builders Initiative. Together, we highlighted the tremendous impact of these national programs in shaping the future of technology-driven professionals in Egypt."
+              event="MehwartvChannel - Yom Saeed"
+              cta="Watch Video"
             />
           </SpeakingSection>
-          <SpeakingSection title="Podcasts">
+          <SpeakingSection title="Conference">
             <Appearance
-              href="#"
-              title="Using design as a competitive advantage"
-              description="How we used world-class visual design to attract a great team, win over customers, and get more press for Planetaria."
-              event="Encoding Design, July 2022"
-              cta="Listen to podcast"
+              href="https://www.linkedin.com/posts/karim-akl-bs_aepaesaevaeuaezaerabraeiaeyaezabraepaesaecaezaehaeyaer-activity-7298093046678614017-62nz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPI2u0BcO2Etbe1eVgvB6IQgMBlOJg6j2k"
+              title="Representing DEPI at the Illegal Migration Conference"
+              description="Honored to be invited by the Digital Egypt Pioneers Initiative (DEPI) of the Ministry of Communications and Information Technology (MCIT), Egypt to represent our initiative at the illegal migration conference organized by IOM Egypt."
+              event="IOM Egypt Conference"
+              cta="View Post in LinkedIn"
             />
             <Appearance
               href="#"
-              title="Bootstrapping an aerospace company to $17M ARR"
-              description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
-              event="The Escape Velocity Show, March 2022"
-              cta="Listen to podcast"
+              title="Empowering Youth & Creating Safe Pathways"
+              description="Discussing the state's efforts to guide young people, provide alternative opportunities, and promote secure migration routes through innovative initiatives like Digital Egypt Generations (DEG)."
+              event="Hilton Ramses Cairo Hotel"
+              cta="Watch Session"
+
+
             />
             <Appearance
-              href="#"
-              title="Programming your company operating system"
-              description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-              event="How They Work Radio, September 2021"
-              cta="Listen to podcast"
+              href="#!"
+              title="A Future Shaped by Digital Transformation"
+              description="Exploring how initiatives such as these empower youth, foster digital transformation, and prepare them for competitive roles in technology and beyond."
             />
           </SpeakingSection>
+
         </div>
       </SimpleLayout>
     </>
