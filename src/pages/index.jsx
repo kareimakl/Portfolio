@@ -15,10 +15,10 @@ import {
   LinkedInIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image2 from '@/images/photos/image-2.png'
+import image3 from '@/images/photos/image-3.png'
+import image4 from '@/images/photos/image-4.png'
+import image5 from '@/images/photos/image-5.png'
 import khamsat from '@/images/logos/khamsat.jpeg'
 import oncall from '@/images/logos/oncall_hq_logo.jpeg'
 import moneyleek from '@/images/logos/moneyleek.jpeg'
@@ -178,7 +178,7 @@ function Photos() {
 
   return (
     <div>
-      <div className="mt-16 sm:mt-20">
+      {/* <div className="mt-16 sm:mt-20">
         <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
           {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
             <div
@@ -197,7 +197,7 @@ function Photos() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

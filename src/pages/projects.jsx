@@ -3,11 +3,12 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/project/xe.jpg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import XE from '@/images/project/xe.jpg'
+import Orebl from '@/images/project/orebl.png'
+import Primadios from '@/images/project/primadios.png'
+import BookShop from '@/images/project/bookshop.png'
+import DNK from '@/images/project/DNK.png'
+import Arab from '@/images/project/arab.png'
 
 const projects = [
   {
@@ -15,42 +16,42 @@ const projects = [
     description:
       'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
     link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+    logo: XE,
   },
   {
-    name: 'Xe Alkhalej',
+    name: 'BookShop Online',
     description:
-      'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+      'An online bookstore offering a wide range of titles with fast delivery and secure payment options.',
+    link: { href: 'https://bookshop.com', label: 'bookshop.com' },
+    logo: BookShop,
   },
   {
-    name: 'Xe Alkhalej',
+    name: 'Orebl E-Commerce',
     description:
-      'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+      'A cutting-edge e-commerce platform designed to enhance online shopping experiences with AI-driven recommendations.',
+    link: { href: 'https://orebl.com', label: 'orebl.com' },
+    logo: Orebl,
   },
   {
-    name: 'Xe Alkhalej',
+    name: 'Primadios Fitness',
     description:
-      'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+      'A fitness and wellness app providing personalized workout plans, meal tracking, and expert coaching.',
+    link: { href: 'https://primadios.com', label: 'primadios.com' },
+    logo: Primadios,
   },
   {
-    name: 'Xe Alkhalej',
+    name: 'Arab News Portal',
     description:
-      'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+      'A modern news website delivering up-to-date regional and international news in Arabic,a pioneer in home services in  Egypt  ',
+    link: { href: 'https://arabnews.com', label: 'arabnews.com' },
+    logo: Arab,
   },
   {
-    name: 'Xe Alkhalej',
+    name: 'DNK E-Commerce',
     description:
-      'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
-    logo: logoAnimaginary,
+      'An E-Commerce software company specializing in automation,A cutting-edge e-commerce platform designed to enhance online.',
+    link: { href: 'https://dnkai.com', label: 'dnkai.com' },
+    logo: DNK,
   },
 ]
 
@@ -86,11 +87,11 @@ export default function Projects() {
           {projects.map((project) => (
             <Card as="li" key={project.name}
             >
-              <div className="relative overflow-hidden z-10 flex h-40 w-full items-center justify-center rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <div className="relative overflow-hidden z-10 flex h-40 w-full items-center justify-center rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-full w-full object-cover"
+                  className="h-full p-1 rounded-xl w-full object-cover"
                   unoptimized
                 />
               </div>
