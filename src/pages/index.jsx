@@ -27,7 +27,6 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 
-
 function BriefcaseIcon(props) {
   return (
     <svg
@@ -81,15 +80,11 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}
-      target='block'
-    >
+    <Link className="group -m-1 p-1" {...props} target="block">
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
-
-
 
 function Resume() {
   let resume = [
@@ -111,7 +106,8 @@ function Resume() {
       end: 'Sep 2024',
     },
     {
-      company: 'DEPI of the Ministry of Communications and Information Technology',
+      company:
+        'DEPI of the Ministry of Communications and Information Technology',
       title: 'Mern Stack Developer - Internship',
       logo: depi,
       start: 'Apr 2024',
@@ -135,7 +131,7 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative overflow-hidden mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center overflow-hidden rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image src={role.logo} alt="" className="h-10 w-10" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -150,8 +146,9 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
-                  }`}
+                aria-label={`${role.start.label ?? role.start} until ${
+                  role.end.label ?? role.end
+                }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -165,7 +162,13 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button target="_block" rel="noopener noreferrer" href="https://drive.google.com/file/d/1o0nS6K795Ztu8BplgRxIwO0BYreyFTzq/view" variant="secondary" className="group mt-6 w-full">
+      <Button
+        target="_block"
+        rel="noopener noreferrer"
+        href="https://drive.google.com/file/d/1o0nS6K795Ztu8BplgRxIwO0BYreyFTzq/view"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -178,7 +181,7 @@ function Photos() {
 
   return (
     <div>
-      {/* <div className="mt-16 sm:mt-20">
+      <div className="mt-16 sm:mt-20">
         <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
           {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
             <div
@@ -197,7 +200,7 @@ function Photos() {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
@@ -206,9 +209,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          KARIM AKL - Software Engineer, Full Stack Developer
-        </title>
+        <title>KARIM AKL - Software Engineer, Full Stack Developer</title>
         <meta
           name="description"
           content="I’m Karim, a software engineer based in Egypt. I specialize in building modern web applications using React, Next.js, and Node.js, delivering high-performance solutions for various industries."

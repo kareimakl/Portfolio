@@ -9,9 +9,10 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  trailingSlash: true,
   output: 'export',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
   },
 }
 

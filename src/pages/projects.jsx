@@ -7,7 +7,7 @@ import XE from '@/images/project/xe.jpg'
 import Orebl from '@/images/project/orebl.png'
 import Primadios from '@/images/project/primadios.png'
 import BookShop from '@/images/project/bookshop.png'
-import DNK from '@/images/project/DNK.png'
+import DNK from '@/images/project/alwataniacandle.png'
 import Arab from '@/images/project/arab.png'
 
 const projects = [
@@ -22,35 +22,35 @@ const projects = [
     name: 'BookShop Online',
     description:
       'An online bookstore offering a wide range of titles with fast delivery and secure payment options.',
-    link: { href: 'https://bookshop.com', label: 'bookshop.com' },
+    link: { href: 'http://sahartyplasticsurgery.net', label: 'sahartyplasticsurgery.net' },
     logo: BookShop,
   },
   {
     name: 'Orebl E-Commerce',
     description:
       'A cutting-edge e-commerce platform designed to enhance online shopping experiences with AI-driven recommendations.',
-    link: { href: 'https://orebl.com', label: 'orebl.com' },
+    link: { href: 'https://orebishopping.reactbd.com', label: 'orebishopping.reactbd.com' },
     logo: Orebl,
   },
   {
     name: 'Primadios Fitness',
     description:
       'A fitness and wellness app providing personalized workout plans, meal tracking, and expert coaching.',
-    link: { href: 'https://primadios.com', label: 'primadios.com' },
+    link: { href: 'https://primedios.com', label: 'primedios.com' },
     logo: Primadios,
   },
   {
     name: 'Arab News Portal',
     description:
       'A modern news website delivering up-to-date regional and international news in Arabic,a pioneer in home services in  Egypt  ',
-    link: { href: 'https://arabnews.com', label: 'arabnews.com' },
+    link: { href: 'https://arab-italian.com', label: 'arab-italian.com' },
     logo: Arab,
   },
   {
-    name: 'DNK E-Commerce',
+    name: 'Alwatania Candle',
     description:
       'An E-Commerce software company specializing in automation,A cutting-edge e-commerce platform designed to enhance online.',
-    link: { href: 'https://dnkai.com', label: 'dnkai.com' },
+    link: { href: 'https://alwataniacandle.com', label: 'alwataniacandle.com' },
     logo: DNK,
   },
 ]
