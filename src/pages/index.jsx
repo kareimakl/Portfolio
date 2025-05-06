@@ -9,10 +9,11 @@ import { Container } from '@/components/Container'
 import { BookFree15 } from '@/components/BookFree15'
 import Work from '@/components/work'
 import {
-  TwitterIcon,
   WhatsApp,
   GitHubIcon,
   LinkedInIcon,
+  YouTubeIcon,
+  FacebookIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.png'
@@ -209,45 +210,89 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>KARIM AKL - Software Engineer, Full Stack Developer</title>
+        <title>KARIM AKL – Software Engineer | Full Stack Developer</title>
         <meta
           name="description"
-          content="I’m Karim, a software engineer based in Egypt. I specialize in building modern web applications using React, Next.js, and Node.js, delivering high-performance solutions for various industries."
+          content="I’m Karim Akl, a software engineer based in Egypt. I build modern web apps with React, Next.js & Node.js, delivering high‑performance solutions."
         />
+        <meta
+          name="keywords"
+          content="Karim Akl, Software Engineer, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Expert, Web Applications, Frontend, Backend, karimakl.com"
+        />
+        <meta name="author" content="Karim Akl" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook / LinkedIn */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://karimakl.com/" />
+        <meta
+          property="og:title"
+          content="KARIM AKL – Full Stack Software Engineer"
+        />
+        <meta
+          property="og:description"
+          content="I’m Karim Akl, a full stack developer based in Egypt. I create fast, scalable web applications using modern technologies like React and Node.js."
+        />
+        <meta
+          property="og:image"
+          content="https://karimakl.com/images/og-image.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://karimakl.com/" />
+        <meta
+          name="twitter:title"
+          content="KARIM AKL – Full Stack Software Engineer"
+        />
+        <meta
+          name="twitter:description"
+          content="Modern full stack development with React, Next.js, and Node.js by Karim Akl."
+        />
+        <meta
+          name="twitter:image"
+          content="https://karimakl.com/images/og-image.png"
+        />
+
+        {/* Favicon (optional) */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Full Stack Web Developer , WordPress Developer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {`
-            Hi, I'm Karim Akl. I am a passionate Full Stack Web Developer with a love for building diverse and innovative products. My recent projects have involved developing web applications using ReactJS on the front end and Node.js on the back end. I thrive on learning new technologies and applying them to create cool products that bring new ideas to life in various fields. Skills: Front-End Technologies: ReactJS, Redux, JavaScript, Tailwind, Bootstrap Back-End Technologies: Node.js, Express.js Databases: SQL APIs: RESTful API, GraphQL Programming Concepts: Object-Oriented Programming (OOP), Data Structures, Algorithms
-`}
+            Hi, I'm Karim Akl. I am a passionate Full Stack Web Developer with a love for building diverse and innovative products. My recent projects have involved developing web applications using ReactJS on the front end and Node.js on the back end. I thrive on learning new technologies and applying them to create cool products that bring new ideas to life in various fields. Skills: Front-End Technologies: ReactJS, Redux, JavaScript, Tailwind, Bootstrap Back-End Technologies: Node.js, Express.js Databases: SQL APIs: RESTful API, GraphQL Programming Concepts: Object-Oriented Programming (OOP), Data Structures, Algorithms`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://x.com/KARIMAKL0"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
+              href="https://www.youtube.com/@Kariemakl"
+              icon={YouTubeIcon}
+            ></SocialLink>
             <SocialLink
               href="https://api.whatsapp.com/send/?phone=201558820103&text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%20%D9%83%D8%B1%D9%8A%D9%85%20%D8%B9%D9%82%D9%84%20%20%D8%A3%D8%B1%D8%B3%D9%84%20%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D8%B1%D8%B3%D8%A7%D9%84%D8%A9%20%D9%85%D9%86%20%D8%AE%D9%84%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D8%B0%D9%8A%20%D8%B2%D9%8F%D8%B1%D8%AA%D9%87%7Bkarim.akl-bs.com%7D.%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85.%20%D8%A3%D8%AA%D9%85%D9%86%D9%89%20%D8%A3%D9%86%20%D8%A3%D8%AA%D9%85%D9%83%D9%86%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AF%D8%B9%D9%85%20%D8%A3%D9%88%20%D8%A7%D9%84%D8%AA%D9%88%D8%AC%D9%8A%D9%87%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8.%20%D8%B4%D9%83%D8%B1%D9%8B%D8%A7%20%D9%84%D9%83%D9%85!&type=phone_number&app_absent=0"
               aria-label="Follow on Instagram"
               icon={WhatsApp}
             />
             <SocialLink
-              href="https://github.com/Karim-Akl"
+              href="https://github.com/kareimakl"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com/in/karim-akl-web-developer"
+              href="https://linkedin.com/in/kareimakl"
               aria-label="Follow on LinkedIn"
               target="_blank"
               icon={LinkedInIcon}
             />
+            {/* <SocialLink
+              href="https://www.facebook.com/kareimakl"
+              icon={FacebookIcon}
+            >
+            </SocialLink> */}
           </div>
         </div>
       </Container>

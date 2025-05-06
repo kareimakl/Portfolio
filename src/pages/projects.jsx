@@ -9,28 +9,66 @@ import Primadios from '@/images/project/primadios.png'
 import BookShop from '@/images/project/bookshop.png'
 import DNK from '@/images/project/alwataniacandle.png'
 import Arab from '@/images/project/arab.png'
+import tech from '@/images/project/tech-center.png'
+import GSC from '@/images/project/gsc-ae.png'
+import Centro from '@/images/project/centro-tecnologia.png'
+import aklinvestment from '@/images/project/aklinvestment.png'
+import AKlHomeSERVICES from '@/images/project/aklhomeServses.png'
+import Delta from '@/images/project/dalta.png'
 
 const projects = [
   {
     name: 'Xe Alkhalej',
     description:
       'Design and development of the Exi website for recruitment and rental packages, a pioneer in home services in Saudi Arabia.',
-    link: { href: 'https://xealkhalej.sa', label: 'xealkhalej.sa' },
+    link: { href: 'https://xealkhalej.com', label: 'xealkhalej.com' },
     logo: XE,
   },
   {
-    name: 'BookShop Online',
+    name: 'TECHNOLOGY CENTER',
     description:
-      'An online bookstore offering a wide range of titles with fast delivery and secure payment options.',
-    link: { href: 'http://sahartyplasticsurgery.net', label: 'sahartyplasticsurgery.net' },
-    logo: BookShop,
+      'A company specialized in importing engines, providing top industrial solutions with the highest quality in the Egyptian market.',
+    link: { href: 'https://tech-center-eg.com', label: 'tech-center-eg.com' },
+    logo: tech,
   },
   {
-    name: 'Orebl E-Commerce',
+    name: 'Akl Investment',
     description:
-      'A cutting-edge e-commerce platform designed to enhance online shopping experiences with AI-driven recommendations.',
-    link: { href: 'https://orebishopping.reactbd.com', label: 'orebishopping.reactbd.com' },
-    logo: Orebl,
+      'A leading real estate marketing company based in Dubai, offering a wide range of property solutions and investment opportunities in the UAE.',
+    link: { href: 'https://aklinvestment.com', label: 'aklinvestment.com' },
+    logo: aklinvestment,
+  },
+  {
+    name: 'Alwatania Candle',
+    description:
+      'An E-Commerce software company specializing in automation,A cutting-edge e-commerce platform designed to enhance online.',
+    link: { href: 'https://alwataniacandle.com', label: 'alwataniacandle.com' },
+    logo: DNK,
+  },
+
+  {
+    name: 'GSC Motors',
+    description:
+      'Based in Dubai, UAE, we provide advanced industrial machinery and are the exclusive agent of the Italian brand Motovario, offering premium European solutions for various industries.',
+    link: { href: 'https://www.gsc-ae.com', label: 'gsc-ae.com' },
+    logo: GSC,
+  },
+  {
+    name: 'AKL HOME SERVICES',
+    description:
+      'A leading home services company in Egypt, specializing in cleaning, maintenance, and a variety of professional household solutions.',
+    link: { href: 'https://akl-bs.com', label: 'akl-bs.com' },
+    logo: AKlHomeSERVICES,
+  },
+  {
+    name: 'Centro Tecnologia',
+    description:
+      'Based in Italy, we supply cutting-edge industrial machinery and represent top international brands to serve diverse industries with high-quality European solutions.',
+    link: {
+      href: 'https://centro-tecnologia.com',
+      label: 'centro-tecnologia.com',
+    },
+    logo: Centro,
   },
   {
     name: 'Primadios Fitness',
@@ -40,6 +78,27 @@ const projects = [
     logo: Primadios,
   },
   {
+    name: 'BookShop Online',
+    description:
+      'An online bookstore offering a wide range of titles with fast delivery and secure payment options.',
+    link: {
+      href: 'http://sahartyplasticsurgery.net',
+      label: 'sahartyplasticsurgery.net',
+    },
+    logo: BookShop,
+  },
+  {
+    name: 'Orebl E-Commerce',
+    description:
+      'A cutting-edge e-commerce platform designed to enhance online shopping experiences with AI-driven recommendations.',
+    link: {
+      href: 'https://orebishopping.reactbd.com',
+      label: 'orebishopping.reactbd.com',
+    },
+    logo: Orebl,
+  },
+
+  {
     name: 'Arab News Portal',
     description:
       'A modern news website delivering up-to-date regional and international news in Arabic,a pioneer in home services in  Egypt  ',
@@ -47,11 +106,11 @@ const projects = [
     logo: Arab,
   },
   {
-    name: 'Alwatania Candle',
+    name: 'Delta Alnaseem',
     description:
-      'An E-Commerce software company specializing in automation,A cutting-edge e-commerce platform designed to enhance online.',
-    link: { href: 'https://alwataniacandle.com', label: 'alwataniacandle.com' },
-    logo: DNK,
+      'One of the leading home service providers in Saudi Arabia, proudly rated top on Musaned for delivering exceptional domestic services.',
+    link: { href: 'https://delta-alnaseem.com', label: 'delta-alnaseem.com' },
+    logo: Delta,
   },
 ]
 
@@ -85,20 +144,19 @@ export default function Projects() {
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
-            <Card as="li" key={project.name}
-            >
-              <div className="relative overflow-hidden z-10 flex h-40 w-full items-center justify-center rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <Card as="li" key={project.name}>
+              <div className="relative z-10 flex h-40 w-full items-center justify-center overflow-hidden rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-full p-1 rounded-xl w-full object-cover"
+                  className="h-full w-full rounded-xl object-cover p-1"
                   unoptimized
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link
-                  target='_block'
-                  href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link target="_block" href={project.link.href}>
+                  {project.name}
+                </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
